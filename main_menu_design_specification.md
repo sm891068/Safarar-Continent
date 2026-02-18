@@ -1,22 +1,26 @@
-# Chapter 6: Overall Animations and Transition Effects
+# Main Menu Design Specification
 
-## 6.1 Page Loading Sequence
-- **Timing**: Start at 0ms, complete at 1000ms.
-- **Easing Function**: Ease-in-out.
-- **Description**: The page will fade in from 0% to 100% opacity over the loading period, while the content slides up from below.
+## Chapter 8: Audio Design
+- Principles of audio design.
+- Integration of sound effects and music.
+- Tips for creating immersive audio experiences.
 
-## 6.2 In-loop Animations
-- Define specific animations that will occur continuously while the page is active. 
-- **Examples**: 
-  - Loading spinners
-  - UI notifications
-- **Timing**: Varies based on specific element, generally between 300ms and 1000ms.
-- **Easing Function**: Linear or cubic-bezier values depending on the desired effect.
+## Chapter 9: Accessibility
+- Importance of accessibility in game design.
+- Techniques for making the game accessible to players with disabilities.
+- Resources for testing accessibility features.
 
-## 6.3 Button Selection Transitions
-- **Timing**: 150ms on hover, and 300ms on click.
-- **Easing Function**: Cubic-bezier(0.25, 0.8, 0.25, 1) for hover; ease-in for click.
-- **Description**: Buttons react with a subtle scale and color change upon selection to enhance feedback.
-- **Example**:
-  - Hover: scale(1.05) and change background color to a lighter shade.
-  - Click: scale(0.95) briefly before reverting to normal.
+## Chapter 10: Performance Optimization
+- Best practices for optimizing game performance.
+- Strategies to reduce load times and enhance frame rates.
+- Profiling tools and their use.
+
+## Chapter 11: Special States
+- Definition and use cases for special states in the game.
+- Examples of special states (paused, in menus, etc.).
+- Managing transitions between states.
+
+## Chapter 12: Technical Implementation
+- Overview of technical aspects of the design.
+- Key programming considerations.
+- Tools and environments for implementation.
