@@ -1,41 +1,59 @@
 # Main Menu Design Specification
 
-## Chapter 1: Core Concept
-The main menu design serves as a central hub for user navigation, incorporating a cohesive aesthetic that reflects the overall theme of the Safarar Continent. Emphasis is placed on usability, allowing users to intuitively access various sections of the application.
+## 1) Overall Imagery and Narrative Structure
+- **Imagery**: Vivid landscapes featuring vibrant colors representing the Safarar continent.
+- **Narrative Structure**: The menu should convey the essence of exploration and adventure, guiding users through various functions seamlessly.
 
-## Chapter 2: Background Structure
-The background structure is designed to support the main menu items while adding depth and visual interest. It includes layers of dynamic elements that change based on user interaction and selected themes.
+## 2) Background Structure with Layered Design
+- **Layer 1**: Base layer - soft gradient blending from deep blue to teal.
+- **Layer 2**: Textured overlay of landmasses to enhance depth.
+- **Layer 3**: Foreground elements like clouds and birds to create a dynamic scene.
 
-## Chapter 3: Title Area
-The title area features the name "Safarar Continent" prominently displayed using a stylized font that aligns with the continent's thematic elements. The area includes a logo that reinforces brand identity and an overarching narrative.
+## 3) Title Area with Royal Emblems
+- **Dimensions**: 800px width, 150px height.
+- **Emblem Design**: Incorporate a gold royal crest, flanked by intricate designs.
+- **Transparency**: 80% for depth effect.
 
-## Chapter 4: Button Area
-This section outlines the layout and design of the buttons within the menu. Buttons will have unique shapes and sizes based on function, featuring clear labeling and color coding to enhance accessibility and recognition.
+## 4) Main Menu Button Area
+- **Button Dimensions**: 200px width, 60px height per button.
+- **Color Codes**: Calm gold (#FFD700) background, deep navy text (#000080).
+- **Hover Effect**: Scale up by 1.05 with subtle shadow.
 
-## Chapter 5: Auxiliary Hints
-Auxiliary hints serve to guide users through the menu, providing tooltips, hover states, and other indicators that clarify functionality and assist in navigation.
+## 5) Auxiliary Hints and Symbol Systems
+- **Tooltip Background**: Semi-transparent black (#000000, 70% opacity).
+- **Font**: 14px serif for hints, ensuring clarity and ease of reading.
 
-## Chapter 6: Animations
-Animation principles play a vital role in visual engagement. This chapter details the animation styles applied to menu interactions, including transitions, easing functions, and feedback animations to enhance the user experience.
+## 6) Overall Animations and Transitions
+- **Main Menu Transition Time**: 300ms ease-in-out.
+- **Button Hover Animation**: 150ms scale transition.
 
-## Chapter 7: Responsive Design
-The main menu is designed to be fully responsive across different device types. This chapter details the breakpoints and strategies utilized to ensure a seamless experience on mobile and desktop platforms.
+## 7) Responsive Design for Desktop/Tablet/Mobile
+- **Desktop**: Full-width design with maximum use of space (grid layout).
+- **Tablet**: Adjust button sizes (180px) and stacking layout for usability.
+- **Mobile**: Single column layout, buttons expand to 100% width.
 
-## Chapter 8: Sound Design
-Sound design elements enhance user interaction through a well-curated selection of sound effects that correspond to various menu actions, such as button clicks and transitions.
+## 8) Sound Design
+- **Background Music**: Looping instrumental theme set at volume 80%.
+- **Button Click Sound**: Soft tap sound (frequency: 800Hz, duration: 150ms).
 
-## Chapter 9: Accessibility
-Accessibility features are integrated throughout the design to ensure compatibility with screen readers and other assistive technologies, including adequate color contrast, keyboard navigation, and ARIA roles.
+## 9) Accessibility Design
+- **Color Contrast**: Minimum AA standard to ensure visibility.
+- **Alt Text**: Comprehensive descriptions for visual elements.
+- **Keyboard Navigation**: Ensuring all elements are fully navigable via keyboard.
 
-## Chapter 10: Performance Optimization
-Performance optimization strategies are discussed to ensure the menu operates smoothly without lag, including asset loading techniques and minimizing render times.
+## 10) Performance Optimization
+- **Image Optimization**: Use of SVG and compressed PNG formats for graphics.
+- **Load Time**: Aim for under 2 seconds for main menu interface.
 
-## Chapter 11: Special States
-This chapter outlines the handling of special states within the menu, such as loading indicators, error states, and disabled buttons, guiding users through potential pitfalls in navigation.
+## 11) Special State Handling
+- **Disabled Menu State**: Dim buttons to 50% opacity with a hover effect disabled.
+- **Loading Screen**: Animated spinner displayed during loading intervals.
 
-## Chapter 12: Technical Implementation
-The technical implementation details the frameworks and libraries utilized to develop the menu, discussing code examples, architecture considerations, and deployment strategies.
+## 12) Technical Implementation Recommendations
+- **Framework**: Use React for component-based design.
+- **State Management**: Implement Redux for efficient state handling.
+- **API Calls**: Asynchronous calls with error handling for loading data efficiently.
 
 ---
 
-This specification aims to provide a comprehensive guideline for the development and implementation of the main menu for Safarar Continent, ensuring a cohesive and engaging user experience.
+This specification details the main menu design for the Safarar Continent, ensuring a user-friendly and aesthetically pleasing interface for all users, enhancing their journey through the continent.
