@@ -1,76 +1,41 @@
 # Town Scene Design Specification
 
-## Overview
-This document outlines the comprehensive design framework for a city or town scene in the game environment.
+## 1. Town Square
+- Description: A central gathering place with benches and a fountain.
+- Dimensions: 100m x 100m
 
-## Building Layout
-The town consists of the following 10 buildings:
+## 2. Town Hall
+- Description: The administrative center where meetings are held.
+- Dimensions: 60m x 40m
 
-1. **Town Hall**  
-   - Function: Government & Administrative functions  
-   - Description: A large structure at the center of town with a clock tower.
-  
-2. **Market Place**  
-   - Function: Shopping and trade  
-   - Description: Open area with stalls for merchants.
-  
-3. **Blacksmith**  
-   - Function: Equipment crafting and repair  
-   - Description: A workshop with a forge and tools.
-  
-4. **Inn/Tavern**  
-   - Function: Lodging and food services  
-   - Description: Cozy place for adventurers to rest and socialize.
-  
-5. **Library**  
-   - Function: Knowledge resource  
-   - Description: Equipped with bookshelves and study areas.
-  
-6. **Mages Guild**  
-   - Function: Magic and alchemy services  
-   - Description: Contains potion brewing stations and spell catalogs.
-  
-7. **Church**  
-   - Function: Religious services and community events  
-   - Description: A peaceful place of worship with a garden.
-  
-8. **Guard Station**  
-   - Function: Security and law enforcement  
-   - Description: A fortified building where guards are stationed.
-  
-9. **Farm**  
-   - Function: Food production  
-   - Description: Fields located on the outskirts of the town.
-  
-10. **Housing District**  
-   - Function: Residential area  
-   - Description: Diverse houses for different town characters.
+## 3. Library
+- Description: A public library with a reading area and bookshelves.
+- Dimensions: 30m x 20m
 
-## UI Specifications
-1. **Main Menu**
-   - Dynamic background displaying various buildings.
-   - Options include Start Game, Load Game, Settings, Exit.
+## 4. Marketplace
+- Description: An open space for vendors to sell goods.
+- Dimensions: 80m x 60m
 
-2. **In-game UI**
-   - Health and inventory displayed at the top-left.
-   - Mini-map at the top-right indicating players' locations.
-   - Interaction prompts appear near NPCs and objects.
+## 5. Bakery
+- Description: A small bakery offering fresh bread and pastries.
+- Dimensions: 15m x 10m
 
-## Interactions
-- Players can interact with buildings by approaching them.  
-- NPC conversations triggered by proximity or button input.  
-- Shopping interfaces opened in Market Place and Blacksmith.
+## 6. Inn/Hotel
+- Description: A place for travelers to stay overnight.
+- Dimensions: 50m x 30m
 
-## Responsive Design
-- Game adapts to various screen sizes ensuring usability on desktop and mobile.
-- UI elements rescale and reposition based on device orientation.
+## 7. Blacksmith
+- Description: A blacksmith shop for crafting weapons and tools.
+- Dimensions: 20m x 15m
 
-## Animations
-- Smooth transitions for opening menus and switching scenes.
-- Animations for NPC movements and interactions.
-- Event-triggered animations for building activity (e.g., gates opening).
+## 8. Residential Area
+- Description: Houses for families, spaced for privacy.
+- Dimensions: Varies per house (average 10m x 8m)
 
-## NPC Systems
-- Each NPC has specific schedules and routines.  
-- NPCs display dynamic conversations based on player actions.
-- Quest-giving NPCs marked with unique icons or indicators.
+## 9. Park
+- Description: A green space with trees and a playground.
+- Dimensions: 50m x 50m
+
+## 10. Church
+- Description: A community place for worship and gatherings.
+- Dimensions: 40m x 25m
