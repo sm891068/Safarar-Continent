@@ -1,0 +1,13 @@
+.game-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFDD00;
+    text-align: center;
+}
+
+.game-text {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    margin: 20px;
+    line-height: 1.5;
+}
