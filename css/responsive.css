@@ -1,0 +1,24 @@
+.container {
+    padding: 0 15px;
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Tablet Styles (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Desktop Styles (min-width: 1920px) */
+@media only screen and (min-width: 1920px) {
+    .container {
+        width: 70%;
+    }
+}
