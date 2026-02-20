@@ -1,10 +1,33 @@
 :root {
-  --color-primary: #3498db;
-  --color-secondary: #2ecc71;
-  --font-family-base: 'Helvetica, Arial, sans-serif';
-  --font-size-base: 16px;
+  /* Colors */
+  --base-color: #2A2218;
+  --gold-color: #D4AF37;
+
+  /* Fonts */
+  --font-primary: 'Cinzel', serif;
+  --font-secondary: 'Crimson Text', serif;
+
+  /* Responsive Text Sizes */
+  --text-size-small: clamp(0.8rem, 1rem + 0.5vw, 1.2rem);
+  --text-size-medium: clamp(1rem, 1.25rem + 0.5vw, 1.5rem);
+  --text-size-large: clamp(1.5rem, 1.75rem + 0.5vw, 2rem);
+
+  /* Spacing */
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
+
+  /* Animations */
   --animation-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --animation-duration: 0.3s;
+
+  /* Shadows */
+  --shadow-small: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-large: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+  /* Z-Index Layers */
+  --z-index-low: 1;
+  --z-index-medium: 10;
+  --z-index-high: 100;
 }
