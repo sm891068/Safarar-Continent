@@ -1,0 +1,29 @@
+:root {
+  --color-base: #2A2218;
+  --color-gold: #D4AF37;
+  --color-parchment: #FAF0E6;
+  --font-family-main: 'Cinzel', serif;
+  --font-family-secondary: 'Crimson Text', serif;
+}
+
+body {
+  background: var(--color-base);
+  font-family: var(--font-family-main);
+}
+
+.main-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.utility {
+  margin: 1rem;
+  padding: 1rem;
+}
