@@ -1,18 +1,114 @@
+/**
+ * 按鈕組件 - 古典RPG風格
+ */
+
 .menu-button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    height: 52px;
+    background: linear-gradient(90deg, 
+        rgba(250, 240, 230, 0.1) 0%, 
+        rgba(250, 240, 230, 0.4) 50%,
+        rgba(250, 240, 230, 0.1) 100%);
+    border: 2px solid var(--color-parchment);
+    border-right: none;
+    clip-path: polygon(
+        0 0, 
+        calc(100% - 18px) 0, 
+        100% 50%, 
+        calc(100% - 18px) 100%, 
+        0 100%
+    );
+    cursor: pointer;
+    transition: all 0.4s var(--ease-in-out);
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    opacity: 0.7;
+    overflow: hidden;
 }
 
-.menu-button:hover {
-  background-color: #45a049;
-  transform: scale(1.05);
+.menu-button::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
+    transform: rotate(45deg);
+    box-shadow: 
+        inset -1px -1px 2px rgba(0,0,0,0.3),
+        inset 1px 1px 2px rgba(255,255,255,0.4),
+        0 0 8px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover,
+.menu-button:active {
+    opacity: 1;
+    background: linear-gradient(90deg, 
+        rgba(250, 240, 230, 0.2) 0%, 
+        rgba(250, 240, 230, 0.6) 50%,
+        rgba(250, 240, 230, 0.2) 100%);
+    border-color: #E8D4B8;
+    transform: translateX(5px);
+}
+
+.menu-button:hover::before {
+    box-shadow: 
+        inset -1px -1px 2px rgba(0,0,0,0.3),
+        inset 1px 1px 2px rgba(255,255,255,0.4),
+        0 0 20px rgba(255, 215, 0, 0.8);
+    transform: rotate(45deg) scale(1.1);
+}
+
+.button-text {
+    font-family: var(--font-title);
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+    color: var(--color-text-dark);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.button-narrative {
+    position: absolute;
+    right: 25px;
+    font-size: 0.8rem;
+    color: var(--color-gold);
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .button-narrative {
+        display: block;
+        right: -100px;
+    }
+    .menu-button:hover .button-narrative {
+        opacity: 0.8;
+        right: 25px;
+    }
+}
+
+.light-sweep {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(212, 175, 55, 0.3), 
+        transparent
+    );
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.menu-button:hover .light-sweep {
+    left: 150%;
+    transition: left 0.8s ease;
 }
